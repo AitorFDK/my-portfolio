@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=android,desktop_windows,ios" />
+
+
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+
+    <section id="landing">
+        <h1>AITOR LÓPEZ ALONSO</h1>
+        <h2>GAME PROGRAMMER</h2>
+        <div id="landingButtons" class="mt-1">
+            <a href="#projects"
+                onclick="event.preventDefault(); document.querySelector('#projects').scrollIntoView({ behavior: 'smooth' });"
+                type="button" class="button button-secondary"><i class="bi bi-search"></i> View Projects</a>
+            <a href="CV_AitorLopez.pdf" download="CV_AitorLopez.pdf" type="button" class="button" target="_blank"><i
+                    class="bi bi-file-earmark"></i> Download CV</a>
+        </div>
+    </section>
+
+    <section id="projects">
+
+        <h2>SELECTED PROJECTS</h2>
+
+
+        <!-- ####################################################################### -->
+        <!--                               Fairy Tales                               -->
+        <!-- ####################################################################### -->
+
+
+        <div class="project">
+            <img src="images/fairy-tales.webp" alt="Fairy Tales customization canvas">
+            <div class="details">
+                <h3>My Way: Fairy Tales</h3>
+
+                <p class="grey-text">Fairy Tales is a learning app for Kids&Us students that connects interactive online
+                    activities with in-person lessons, making education engaging and fun.</p>
+
+                <div class="mt-1">
+                    <span class="badge badge-pc">
+                        <i class="bi bi-pc-display"></i> &nbsp; PC
+                    </span>
+
+                    <span class="badge badge-android">
+                        <i class="bi bi-android2"></i> &nbsp; Android
+                    </span>
+
+                    <span class="badge badge-ios">
+                        <i class="bi bi-apple"></i> &nbsp; iOS
+                    </span>
+                </div>
+
+                <p class="mt-1 primary-color bold">My Contributions:</p>
+
+                <ul class="contributions grey-text">
+                    <li><b>Designed game architecture</b> and implemented the core gameplay.</li>
+                    <li><b>Built custom tools</b> for asset optimization, build management, and mesh/sprite
+                        handling.</li>
+                    <li>Integrated <b>backend systems</b> and <b>live operations</b>.</li>
+                    <li>Implemented a <b>responsive UI</b> for all devices ensuring a correct <b>UX</b>.</li>
+                    <li>Optimized performance for <b>low-spec mobile devices</b> using profiling tools.</li>
+                    <li>Conducted <b>code reviews</b> and prepared <b>technical documentation</b>.</li>
+                </ul>
+
+                <ul class="tags">
+                    <li>Unity</li>
+                    <li>C#</li>
+                    <li>Backend</li>
+                    <li>Git</li>
+                    <li>UI</li>
+                    <li>UX</li>
+                    <li>Profiling</li>
+                    <li>Tools</li>
+                    <li>Documentation</li>
+                    <li>Live Ops</li>
+                </ul>
+
+
+                <div class="mt-1">
+                    <a href="https://myway.kidsandus.com/en/fairy-tales" target="_blank" type="button" class="button"><i
+                            class="bi bi-globe"></i> Project Website</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ####################################################################### -->
+        <!--                              Com Veu Mana                               -->
+        <!-- ####################################################################### -->
+
+
+        <div class="project reverse">
+
+            <img src="images/com-veu-mana.webp" alt="Com Veu Mana gameplay scene">
+
+            <div class="details">
+                <h3>Com Veu Mana</h3>
+
+                <p class="grey-text">Command two workers using only your voice to rebuild the iconic Mare Nostrum
+                    façade. Issue vocal instructions to coordinate their actions and use prayers to unlock powerful
+                    perks, offering endless ways to master strategy and voice control.</p>
+
+                <div class="mt-1">
+                    <span class="badge badge-pc">
+                        <i class="bi bi-pc-display"></i> &nbsp; PC
+                    </span>
+                </div>
+
+                <p class="mt-1 primary-color bold">My Contributions:</p>
+
+                <ul class="contributions grey-text">
+                    <li><b>Designed game architecture</b> and developed <b>SDK components</b>.</li>
+                    <li>Implemented <b>UI</b> components, <b>gameplay mechanics</b>, and <b>AI models integration with
+                            Unity Sentis</b>.</li>
+                    <li>Managed <b>backend communication</b> with LNU services to interact with the characters.</li>
+                    <li>Created demos to <b>showcase the game concepts.</b></li>
+                    <li>Documented technical processes and workflows.</li>
+                </ul>
+
+                <ul class="tags">
+                    <li>Unity</li>
+                    <li>C#</li>
+                    <li>AI</li>
+                    <li>Backend</li>
+                    <li>UI</li>
+                    <li>Git</li>
+                    <li>Documentation</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <!-- ####################################################################### -->
+        <!--                                Racerloop                                -->
+        <!-- ####################################################################### -->
+
+
+        <div class="project">
+
+            <img src="images/racerloop.webp" alt="Racerloop gameplay scene">
+
+            <div class="details">
+                <h3>Racerloop</h3>
+
+                <p class="grey-text">Compete in a zero-gravity arcade racing game in the Outer Ring universe,
+                    customizing ships, trading parts, and mastering high-speed challenges.</p>
+
+                <div class="mt-1">
+                    <span class="badge badge-pc">
+                        <i class="bi bi-pc-display"></i> &nbsp; PC
+                    </span>
+                </div>
+
+                <p class="mt-1 primary-color bold">My Contributions:</p>
+
+                <ul class="contributions grey-text">
+                    <li><b>Led development</b> of core systems: <b>spaceship upgrades</b>, <b>free-to-play shop</b>,
+                        <b>inventory</b>, <b>UI</b>, and <b>tutorials</b>.
+                    </li>
+                    <li>Managed <b>backend integration</b> and ensured a <b>smooth gameplay experience</b>.</li>
+                    <li><b>Led a team of 2 developers</b>, coordinating tasks, code reviews, and deliveries.</li>
+                    <li>Managed <b>project launch on Epic Store</b>.</li>
+                </ul>
+
+                <ul class="tags">
+                    <li>Unity</li>
+                    <li>C#</li>
+                    <li>AI</li>
+                    <li>Backend</li>
+                    <li>UI</li>
+                    <li>UX</li>
+                    <li>Multiplayer</li>
+                    <li>Git</li>
+                    <li>Leadership</li>
+                    <li>Tools</li>
+                    <li>Publishing</li>
+                </ul>
+
+                <div class="mt-1">
+                    <a href="https://www.blinkgalaxy.com/en/racing/racerloop" target="_blank" type="button"
+                        class="button"><i class="bi bi-globe"></i> Project Website</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ####################################################################### -->
+        <!--                                Maxi Bus                                 -->
+        <!-- ####################################################################### -->
+
+
+        <div class="project reverse">
+
+            <img src="images/maxi-bus.webp" alt="Maxi Bus gameplay scene">
+
+            <div class="details">
+                <h3>Maxi Bus</h3>
+
+                <p class="grey-text">Drive a growing bus, pick up passengers, and deliver them to stations while dodging
+                    obstacles. Master score multipliers and strategic bus management in this addictive arcade
+                    experience.</p>
+
+                <div class="mt-1">
+
+                    <span class="badge badge-android">
+                        <i class="bi bi-android2"></i> &nbsp; Android
+                    </span>
+
+                    <!-- <span class="badge badge-ios">
+                        <i class="bi bi-apple"></i> &nbsp; iOS
+                    </span> -->
+                </div>
+
+                <p class="mt-1 primary-color bold">My Contributions:</p>
+
+                <ul class="contributions grey-text">
+                    <li><b>Developed gameplay mechanics and UI</b> for <b>80+ levels and challenges</b>.
+                    </li>
+                    <li>Designed <b>engaging levels and challenges</b> to enhance player retention.</li>
+                    <li>Managed <b>publishing, live operations</b>, and <b>backend integration</b>.</li>
+                </ul>
+
+                <ul class="tags">
+                    <li>Unity</li>
+                    <li>C#</li>
+                    <li>UI</li>
+                    <li>Level design</li>
+                    <li>Publishing</li>
+                    <li>Live Ops</li>
+                </ul>
+
+                <!-- <div class="mt-1">
+                    <a href="https://www.blinkgalaxy.com/en/racing/racerloop" target="_blank" type="button"
+                        class="button">Project Website</a>
+                </div> -->
+            </div>
+        </div>
+
+
+        <!-- ####################################################################### -->
+        <!--                                 Back Up                                 -->
+        <!-- ####################################################################### -->
+
+
+        <div class="project">
+
+            <img src="images/backup.webp" alt="Back Up gameplay scene">
+
+            <div class="details">
+                <h3>Back Up: The board game</h3>
+
+                <p class="grey-text">Play dice and token-based matches against AI or a friend on the same device in this
+                    strategic digital board game.
+                </p>
+
+                <div class="mt-1">
+
+                    <span class="badge badge-android">
+                        <i class="bi bi-android2"></i> &nbsp; Android
+                    </span>
+
+                    <!-- <span class="badge badge-ios">
+                        <i class="bi bi-apple"></i> &nbsp; iOS
+                    </span> -->
+                </div>
+
+                <p class="mt-1 primary-color bold">My Contributions:</p>
+
+                <ul class="contributions grey-text">
+                    <li><b>Developed gameplay and UI</b>, including <b>opponent AI</b>.</li>
+                    <li><b>Created assets</b> and managed <b>publishing and live operations</b>.</li>
+                </ul>
+
+                <ul class="tags">
+                    <li>Unity</li>
+                    <li>C#</li>
+                    <li>UI</li>
+                    <li>UX</li>
+                    <li>AI</li>
+                    <li>Graphic Design</li>
+                    <li>Publishing</li>
+                    <li>Live Ops</li>
+                </ul>
+
+                <div class="mt-1">
+                    <a href="https://play.google.com/store/apps/details?id=com.MendiGames.BackUp" target="_blank"
+                        type="button" class="button"><i class="bi bi-google-play"></i> Android Playstore</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="footer">
+        <p>© 2025 Aitor López Alonso. All rights reserved.</p>
+        <p>Designed and built by me.</p>
+    </section>
+
+</body>
+
+</html>

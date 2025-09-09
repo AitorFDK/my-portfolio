@@ -1,0 +1,277 @@
+:root {
+    /* Ocean Pearl Delight palette */
+    --primary-color: #006d77;
+    --secondary-color: #83c5be;
+    --accent-color: #ffddd2;
+    --text-color: #333;
+    --grey-text-color: #777;
+    --background-color: #f9f7f3;
+
+    --badge-pc-color: #0078d7;
+    --badge-android-color: #3ddc84;
+    --badge-ios-color: #a3aaa3;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+}
+
+b {
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.grey-text {
+    color: var(--grey-text-color);
+}
+
+.mt-1 {
+    margin-top: 1em;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.75em 1.5em;
+    font-size: 1em;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.primary-color {
+    color: var(--primary-color) !important; 
+}
+
+.bold {
+    font-weight: 700 !important;
+}
+
+/* ------------------------------ Landing Page ------------------------------ */
+
+#landing {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("../images/background.jpg");
+    background-size: contain;
+}
+
+#landing h1 {
+    font-size: 5em;
+    font-weight: 900;
+    margin-bottom: 0.5em;
+    color: var(--secondary-color);
+    text-shadow: rgba(0, 0, 0, .3) 2px 2px 5px;
+}
+
+#landing h2 {
+    font-size: 4em;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+    color: var(--accent-color);
+    text-shadow: rgba(0, 0, 0, .3) 2px 2px 5px;
+}
+
+#landing .button {
+    margin: 0 0.5em;
+    color: white;
+    background-color: var(--secondary-color);
+    box-shadow: rgba(0, 0, 0, .3) 2px 2px 5px;
+    transition: scale 0.3s ease;
+    text-shadow: rgba(0, 0, 0, .3) 2px 2px 3px;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+#landing .button:hover {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    scale: 1.05;
+    text-shadow: none;
+}
+
+#landingButtons {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media (max-width: 1024px) {
+    #landing h1 {
+        font-size: 3.5em;
+    }
+
+    #landing h2 {
+        font-size: 3em;
+    }
+
+    #landing .button {
+        padding: 0.5em 1em;
+    }
+
+    #landingButtons {
+        flex-direction: column;
+    }
+
+}
+
+/* ------------------------------ Projects Page ----------------------------- */
+
+#projects {
+    padding: 2em;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+#projects h2 {
+    font-size: 3em;
+    font-weight: 800;
+    margin-bottom: 1em;
+    text-align: center;
+    color: var(--primary-color)
+}
+
+#projects .project {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    align-items: center;
+    width: 100%;
+    padding: 3em;
+    margin-bottom: 4em;
+}
+
+#projects .project img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 2px 5px;
+}
+
+#projects .project .details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.3em .7em;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: 700;
+    color: white;
+    text-shadow: rgba(0, 0, 0, .5) 1px 1px 3px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: var(--secondary-color);
+}
+
+/* .badge-pc {
+    background-color: var(--badge-pc-color);
+}
+
+.badge-android {
+    background-color: var(--badge-android-color);
+}
+
+.badge-ios {
+    background-color: var(--badge-ios-color);
+} */
+
+.details h3 {
+    font-size: 2em;
+    font-weight: 700;
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--secondary-color);
+    padding-bottom: 5px;
+}
+
+.contributions {
+    padding-left: 1.5em;
+}
+
+.contributions li {
+    margin-bottom: 0.5em;
+    list-style-type: disc;
+}
+
+.tags {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    margin-top: 1em;
+}
+
+.tags li {
+    border: 2px solid var(--primary-color);
+    /* background-color: var(--secondary-color); */
+    color: var(--primary-color);
+    padding: 0.3em 0.8em;
+    border-radius: 15px;
+    font-size: 0.875em;
+    font-weight: 700;
+    text-shadow: rgba(255, 255, 255, .3) 1px 1px 1px;
+}
+
+#projects .button {
+    color: white;
+    transition: background-color 0.2s ease;
+    background-color: var(--primary-color);
+    box-shadow: var(--secondary-color) 2px 2px 5px;
+}
+
+#projects .button:hover {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    box-shadow: var(--primary-color) 2px 2px 5px;
+}
+
+@media (min-width: 1024px) {
+    #projects .project {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    #projects .project.reverse {
+        flex-direction: row-reverse;
+    }
+
+    #projects .project img,
+    #projects .project .details {
+        width: 50%;
+    }
+}
+
+/* ------------------------------ Footer ------------------------------ */
+
+#footer {
+    padding: 1em;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: 0.875em;
+}
+
+#footer p {
+    margin: 0.2em 0;
+}
