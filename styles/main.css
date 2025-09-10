@@ -120,11 +120,11 @@ b {
 
 @media (max-width: 1024px) {
     #landing h1 {
-        font-size: 3.5em;
+        font-size: 3em;
     }
 
     #landing h2 {
-        font-size: 3em;
+        font-size: 2em;
     }
 
     #landing .button {
@@ -140,7 +140,7 @@ b {
 /* ------------------------------ Projects Page ----------------------------- */
 
 #projects {
-    padding: 2em;
+    padding: 2em 1em;
     background-color: var(--background-color);
     color: var(--text-color);
 }
@@ -159,7 +159,7 @@ b {
     gap: 3em;
     align-items: center;
     width: 100%;
-    padding: 1em;
+    padding: 0.5em;
     margin-bottom: 6em;
 }
 
@@ -239,6 +239,10 @@ b {
 }
 
 @media (min-width: 1024px) {
+    #projects {
+        padding: 2em;
+    }
+
     #projects .project {
         flex-direction: row;
         align-items: flex-start;
