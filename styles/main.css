@@ -159,8 +159,8 @@ b {
     gap: 3em;
     align-items: center;
     width: 100%;
-    padding: 3em;
-    margin-bottom: 4em;
+    padding: 1em;
+    margin-bottom: 6em;
 }
 
 #projects .project img {
@@ -242,6 +242,7 @@ b {
     #projects .project {
         flex-direction: row;
         align-items: flex-start;
+        padding: 3em 5em;
     }
 
     #projects .project.reverse {
