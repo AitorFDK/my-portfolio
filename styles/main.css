@@ -53,7 +53,7 @@ b {
 }
 
 .primary-color {
-    color: var(--primary-color) !important; 
+    color: var(--primary-color) !important;
 }
 
 .bold {
@@ -77,6 +77,8 @@ b {
     font-size: 5em;
     font-weight: 900;
     margin-bottom: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
     color: var(--secondary-color);
     text-shadow: rgba(0, 0, 0, .3) 2px 2px 5px;
 }
@@ -85,6 +87,8 @@ b {
     font-size: 4em;
     font-weight: 700;
     margin-bottom: 0.5em;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
     color: var(--accent-color);
     text-shadow: rgba(0, 0, 0, .3) 2px 2px 5px;
 }
@@ -185,18 +189,6 @@ b {
     background-color: var(--secondary-color);
 }
 
-/* .badge-pc {
-    background-color: var(--badge-pc-color);
-}
-
-.badge-android {
-    background-color: var(--badge-android-color);
-}
-
-.badge-ios {
-    background-color: var(--badge-ios-color);
-} */
-
 .details h3 {
     font-size: 2em;
     font-weight: 700;
@@ -235,7 +227,7 @@ b {
 
 #projects .button {
     color: white;
-    transition: background-color 0.2s ease;
+    transition: all 0.2s ease;
     background-color: var(--primary-color);
     box-shadow: var(--secondary-color) 2px 2px 5px;
 }
@@ -269,9 +261,47 @@ b {
     text-align: center;
     background-color: var(--primary-color);
     color: var(--secondary-color);
-    font-size: 0.875em;
 }
 
 #footer p {
     margin: 0.2em 0;
+    font-size: 0.875em;
+}
+
+#footer .separator {
+    margin-bottom: 0.5em;
+    border-bottom: 1px solid var(--secondary-color);
+    width: 20%;
+    display: inline-block;
+}
+
+#contact {
+    padding: 2em;
+    gap: 1em;
+    text-align: center;
+    color: var(--text-color);
+}
+
+#contact h2 {
+    font-size: 3em;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+    color: var(--secondary-color);
+}
+
+#contact a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.3em;
+    transition: color 0.2s ease;
+}
+
+#contact a:hover {
+    color: var(--accent-color);
+}
+
+#contact i {
+    color: var(--accent-color);
+    margin-right: 0.2em;
 }
